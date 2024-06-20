@@ -4,7 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 code {
@@ -13,27 +13,95 @@ code {
 }
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
+  padding: 10px; 
   border: none;
-  width: 100%;
+  width: 25px;
   cursor: pointer;
+}
+.card-grid Button {
+  border: none;
+  margin-bottom: 25px;
+  width: 200px;
+  cursor: pointer;
+}
+.card-grid Button:hover{
+  border-radius: 5px;
+  background-color: rgb(21, 137, 245);
+}
+
+.img-fav {
+  width: 25px; 
+  cursor: pointer; 
 }
 
 h1{
   text-align: center;
 }
-
+/* ----------------------  NAVBAR -----------------------*/
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  width: 100%;  
   padding: 1rem;
+  
+  
 }
 
+.dh-nav {
+  margin-left: 300px;
+  font-size: 20px;
+}
+.dh-nav::first-letter{
+  color: red;
+  font-weight: bold;
+}
+.nav-links{
+  margin-left: 800px;
+  margin-top: 8px;
+  
+}
+nav button {
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+.light nav {
+  background-color: rgb(136, 136, 136);
+}
+.light nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+.dark {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+
+}
+.dark nav {
+  background-color: black;
+}
+.dark a {
+  color: white;
+  font-weight: bold;
+}
+.dark nav button {
+  background-color: #fff;
+}
 a{
   color: #000;
   text-decoration: none;
-  margin: 5px;
+  margin: 10px;
   cursor: pointer;
 }
 a:hover{
@@ -50,17 +118,39 @@ footer {
   width: 90%;
   height: 40px;
   margin-top: 2rem;
+ 
+  
 }
 
-footer > img{
+.img-dh{
   width: 200px;
-  margin: 0;
+  margin: 0px 400px 0px 0px
+  
 }
+footer img {
+  padding: 5px;
+  width: 40px;
+
+}
+
+
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
 }
-
+.red-footer {
+  background-color: red;
+  height: 45px;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
+}
+.social-icons{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+  width: 30px;
+  
+}
 form{
   display: flex;
   flex-direction: column;
@@ -78,6 +168,7 @@ form{
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  text-align: center;
 }
 
 .card:hover{
@@ -93,6 +184,11 @@ form{
   flex-wrap: wrap;
   margin: 0 auto;
 }
+.img-doctor{
+  width: 150px;
+  height: 150px;
+  
+}
 
 table {
  border-collapse: collapse;
@@ -102,21 +198,20 @@ table {
     border: 1px solid #ccc;
 
 }
-
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
 .dark{
   background-color: #12121296;
   color: white;
+  
 }
-.dark > a {
-  color: white;
+.container {
+  height: 100vw;
+  width: 100vw;
 }
